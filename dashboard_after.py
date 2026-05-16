@@ -9,8 +9,9 @@ st.title("Six Store Performance Dashboard 2025")
 # Data Loading Function
 @st.cache_data
 def load_data():
-    # Pastikan file CSV berada di direktori yang benar
-    df = pd.read_csv(r'D:\PVD\store_sales.csv')
+  
+    # df = pd.read_csv(r'D:\PVD\store_sales.csv')
+    df = pd.read_csv('store_sales.csv')
     df.columns = df.columns.str.strip()
     return df
 
